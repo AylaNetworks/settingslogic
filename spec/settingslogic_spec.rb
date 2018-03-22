@@ -204,4 +204,11 @@ describe "Settingslogic" do
     end
   end
 
+  it "should docker namespace using dotenv" do
+    Settings5.namespace.should == 'docker'
+    Settings5.sso.scope.should == "user/sso/v1"
+    Settings5.sso.salt.should == "AYLA-SSO"
+    Settings5.sso.cutoff_time_in_sec.should == 15
+  end
+
 end

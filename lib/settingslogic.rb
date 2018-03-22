@@ -1,6 +1,8 @@
 require "yaml"
 require "erb"
 require 'open-uri'
+require 'dotenv'
+Dotenv.load
 
 # A simple settings solution using a YAML file. See README for more information.
 class Settingslogic < Hash

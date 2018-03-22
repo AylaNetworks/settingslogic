@@ -26,3 +26,10 @@ array:
     name: first
   -
     name: second
+
+docker:
+  sso:
+    scope: "<%= ENV['ayla_hmac.sso.scope'] %>"
+    salt: "<%= ENV['ayla_hmac.sso.salt']  %>"
+    cutoff_time_in_sec: <%= ENV['ayla_hmac.sso.cutoff_time_in_sec']  %>
+
